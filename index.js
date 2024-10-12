@@ -18,6 +18,9 @@ app.engine('html', ejs.renderFile);
 app.set('views engine, 'html');
 app.use(express.static('./public'));
 
-app.use(morgan("common"));
+app.use(routeHome); 
+app.use(routeJob); 
+
+app.listen(port);
 
 
